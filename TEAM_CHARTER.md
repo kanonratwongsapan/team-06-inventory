@@ -4,9 +4,10 @@
 
 | ชื่อ | GitHub Username | บทบาท |
 |---|---|---|
-| ...  | ...             | Product Owner |
-| ...  | ...             | Scrum Master / Developer |
-| ...  | ...             | Developer |
+| นางสาว กนลรัตน์ วงศ์ษาพาล | Kanonrat Wongsapan | Product Owner |
+| นาย สุทธวีร์ พลหินลาด | Suttawee Phonhinlad | Scrum Master |
+| นาย วันเฉลิม บัวทอง | Wanchaleom Buathong | Developer |
+| นาย ชิษณุพงศ์ นนท์ศิลา | Chusanupong Nonsila | Developer |
 
 ## Branching Strategy
 
