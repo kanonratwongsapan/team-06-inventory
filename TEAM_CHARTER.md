@@ -4,7 +4,7 @@
 
 | ชื่อ | GitHub Username | บทบาท |
 |---|---|---|
-| นางสาว กนลรัตน์ วงศ์ษาพาล | Kanonrat Wongsapan | Product Owner |
+| นางสาว กนลรัตน์ วงศ์ษาพาล | <a href="https://github.com/kanonratwongsapan">kanonratwongsapan</a> | Product Owner |
 | นาย สุทธวีร์ พลหินลาด | Suttawee Phonhinlad | Scrum Master |
 | นาย วันเฉลิม บัวทอง | Wanchaleom Buathong | Developer |
 | นาย ชิษณุพงศ์ นนท์ศิลา | Chusanupong Nonsila | Developer |
