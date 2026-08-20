@@ -15,13 +15,16 @@ function addProduct(code, name, quantity) {
   const duplicate = products.some((product) => product.code === code);
 
   if (duplicate) {
+    console.log("สินค้านี้มีอยู่แล้ว");
     console.log("Product already exists");
     return;
   }
 
   products.push({ code, name, quantity });
   saveProducts();
+  console.log("เพิ่มสินค้าใหม่สำเร็จ");
   console.log("Product added successfully");
 }
 
+addProduct("P001", "ดินสอ", 10);
 addProduct("P001", "Pencil", 10);
