@@ -1,29 +1,17 @@
-const fs = require("fs");
+function updateQuantity(code, amount) {
+  const product = products.find((item) => item.code === code);
 
-let products = [];
-
-if (fs.existsSync("products.json")) {
-  const rawData = fs.readFileSync("products.json", "utf8");
-  products = JSON.parse(rawData);
-}
-
-function saveProducts() {
-  fs.writeFileSync("products.json", JSON.stringify(products, null, 2));
-}
-
-function addProduct(code, name, quantity) {
-  const duplicate = products.some((product) => product.code === code);
-
-  if (duplicate) {
-    console.log("สินค้านี้มีอยู่แล้ว");
+  if (!product) {
+    console.log("ไม่พบสินค้า");
     return;
   }
 
-  products.push({ code, name, quantity });
-  saveProducts();
-  console.log("เพิ่มสินค้าใหม่สำเร็จ");
-}
+  if (product.quantity + amount < 0) {
+    console.log("จำนวนคงเหลือไม่พอ");
+    return;
+  }
 
-// test
-addProduct("P002", "ยางลบ", 3);
-addProduct("P001", "ปากกา", 5);
+  product.quantity += amount;
+  saveProducts();
+  console.log("อัปเดตจำนวนสินค้าสำเร็จ");
+}
