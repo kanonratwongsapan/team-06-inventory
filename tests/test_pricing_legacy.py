@@ -1,4 +1,4 @@
-﻿import pytest
+import pytest
 
 from pricing_refactored import H, P, calc
 
