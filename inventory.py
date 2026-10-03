@@ -18,3 +18,13 @@
             raise ValueError("Insufficient stock")
         self.items[name] -= quantity
         return self.items[name]
+
+    def low_stock_items(self, threshold: int):
+        if threshold < 0:
+            return []
+        res = []
+        for k, v in self.items.items():
+            if v <= threshold:
+                res.append(k)
+        res.sort()
+        return res
