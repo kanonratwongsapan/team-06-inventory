@@ -19,12 +19,12 @@
         self.items[name] -= quantity
         return self.items[name]
 
-    def low_stock_items(self, threshold: int):
+    def low_stock_items(self, threshold: int) -> list[str]:
         if threshold < 0:
             return []
-        res = []
-        for k, v in self.items.items():
-            if v <= threshold:
-                res.append(k)
-        res.sort()
-        return res
+        low_stock_names = [
+            item_name
+            for item_name, quantity in self.items.items()
+            if quantity <= threshold
+        ]
+        return sorted(low_stock_names)
